@@ -47,44 +47,44 @@ public class cliente extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         radioEsfera = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        esfera = new javax.swing.JTextArea();
+        btnEsfera = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jTextField3 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
+        btnCono = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
+        cono = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        btnCubo = new javax.swing.JButton();
         jTextField7 = new javax.swing.JTextField();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
+        cubo = new javax.swing.JTextArea();
         jPanel5 = new javax.swing.JPanel();
         jTextField8 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea5 = new javax.swing.JTextArea();
+        prisma = new javax.swing.JTextArea();
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
+        btnPrsima = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jTextField11 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
-        jTextArea6 = new javax.swing.JTextArea();
+        piramide = new javax.swing.JTextArea();
         jTextField12 = new javax.swing.JTextField();
         jTextField13 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
+        btnPiramide = new javax.swing.JButton();
 
         jInternalFrame2.setVisible(true);
 
@@ -160,22 +160,18 @@ public class cliente extends javax.swing.JFrame {
 
         jLabel3.setText("Radio");
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
+        esfera.setColumns(20);
+        esfera.setRows(5);
+        jScrollPane2.setViewportView(esfera);
 
-        jButton1.setText("Area y volumen");
+        btnEsfera.setText("Area y volumen");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(149, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(147, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
@@ -183,8 +179,11 @@ public class cliente extends javax.swing.JFrame {
                         .addComponent(radioEsfera, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(157, 157, 157))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(181, 181, 181))))
+                        .addComponent(btnEsfera)
+                        .addGap(181, 181, 181))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(127, 127, 127))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,18 +193,18 @@ public class cliente extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(radioEsfera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addGap(32, 32, 32)
+                .addComponent(btnEsfera)
+                .addGap(34, 34, 34)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Esfera", jPanel2);
 
-        jButton5.setText("Area y Volumen");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCono.setText("Area y Volumen");
+        btnCono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnConoActionPerformed(evt);
             }
         });
 
@@ -213,9 +212,9 @@ public class cliente extends javax.swing.JFrame {
 
         jLabel5.setText("Altura");
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jScrollPane3.setViewportView(jTextArea3);
+        cono.setColumns(20);
+        cono.setRows(5);
+        jScrollPane3.setViewportView(cono);
 
         jLabel6.setText("Generatriz");
 
@@ -245,7 +244,7 @@ public class cliente extends javax.swing.JFrame {
                         .addContainerGap(47, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5)
+                        .addComponent(btnCono)
                         .addGap(105, 105, 105))))
         );
         jPanel3Layout.setVerticalGroup(
@@ -264,7 +263,7 @@ public class cliente extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
+                    .addComponent(btnCono)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
                 .addContainerGap(107, Short.MAX_VALUE))
@@ -274,11 +273,11 @@ public class cliente extends javax.swing.JFrame {
 
         jLabel7.setText("Area");
 
-        jButton8.setText("Area y volumen");
+        btnCubo.setText("Area y volumen");
 
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jScrollPane4.setViewportView(jTextArea4);
+        cubo.setColumns(20);
+        cubo.setRows(5);
+        jScrollPane4.setViewportView(cubo);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -295,7 +294,7 @@ public class cliente extends javax.swing.JFrame {
                         .addGap(51, 51, 51))
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton8)
+                        .addComponent(btnCubo)
                         .addGap(41, 41, 41)))
                 .addContainerGap(155, Short.MAX_VALUE))
         );
@@ -307,7 +306,7 @@ public class cliente extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
-                .addComponent(jButton8)
+                .addComponent(btnCubo)
                 .addGap(30, 30, 30)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(42, Short.MAX_VALUE))
@@ -317,13 +316,13 @@ public class cliente extends javax.swing.JFrame {
 
         jLabel8.setText("Altura");
 
-        jTextArea5.setColumns(20);
-        jTextArea5.setRows(5);
-        jScrollPane5.setViewportView(jTextArea5);
+        prisma.setColumns(20);
+        prisma.setRows(5);
+        jScrollPane5.setViewportView(prisma);
 
         jLabel10.setText("Area de la base");
 
-        jButton10.setText("Area y volumen");
+        btnPrsima.setText("Area y volumen");
 
         jLabel11.setText("Perimetro de la base");
 
@@ -355,7 +354,7 @@ public class cliente extends javax.swing.JFrame {
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addComponent(jButton10)
+                        .addComponent(btnPrsima)
                         .addGap(61, 61, 61))))
         );
         jPanel5Layout.setVerticalGroup(
@@ -377,7 +376,7 @@ public class cliente extends javax.swing.JFrame {
                                     .addComponent(jLabel8)))
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton10))))
+                                .addComponent(btnPrsima))))
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel10)
                         .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -390,13 +389,13 @@ public class cliente extends javax.swing.JFrame {
 
         jLabel9.setText("Altura");
 
-        jTextArea6.setColumns(20);
-        jTextArea6.setRows(5);
-        jScrollPane6.setViewportView(jTextArea6);
+        piramide.setColumns(20);
+        piramide.setRows(5);
+        jScrollPane6.setViewportView(piramide);
 
         jLabel13.setText("Area de la base");
 
-        jButton12.setText("Area y volumen");
+        btnPiramide.setText("Area y volumen");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -425,7 +424,7 @@ public class cliente extends javax.swing.JFrame {
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(jButton12)
+                        .addComponent(btnPiramide)
                         .addGap(45, 45, 45))))
         );
         jPanel6Layout.setVerticalGroup(
@@ -436,7 +435,7 @@ public class cliente extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton12))
+                        .addComponent(btnPiramide))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel13)
@@ -468,9 +467,9 @@ public class cliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnConoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnConoActionPerformed
 
     private void btnCilindroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCilindroActionPerformed
          
@@ -562,12 +561,15 @@ public class cliente extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField alturaCilindro;
     private javax.swing.JButton btnCilindro;
+    private javax.swing.JButton btnCono;
+    private javax.swing.JButton btnCubo;
+    private javax.swing.JButton btnEsfera;
+    private javax.swing.JButton btnPiramide;
+    private javax.swing.JButton btnPrsima;
     private javax.swing.JTextArea cilindro;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JTextArea cono;
+    private javax.swing.JTextArea cubo;
+    private javax.swing.JTextArea esfera;
     private javax.swing.JInternalFrame jInternalFrame2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -595,11 +597,6 @@ public class cliente extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
-    private javax.swing.JTextArea jTextArea5;
-    private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
@@ -610,6 +607,8 @@ public class cliente extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextArea piramide;
+    private javax.swing.JTextArea prisma;
     private javax.swing.JTextField radioCilindro;
     private javax.swing.JTextField radioEsfera;
     // End of variables declaration//GEN-END:variables
